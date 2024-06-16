@@ -14,9 +14,8 @@ int main(){
         finalmonto = totalmonto;
     }
 
-    cout << "El monto total a pagar: S/ " << totalmonto << endl;
-    cout << "Su descuento aplicado: S/ " << descuento << endl;
-    cout << "Y el monto a pagar despues del descuento: S/ " << finalmonto << endl;
+    cout << "El monto total a pagar es de: S/ " << totalmonto << " y el descuento que se aplico es de: "<< descuento << endl;
+    cout << "Entonces el monto a pagar despues del descuento es de: S/ " << finalmonto << endl;
     return 0;
 }
 
