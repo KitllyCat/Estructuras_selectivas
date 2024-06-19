@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+	
     char sexo;
     int edad;
     double numPulsaciones;
@@ -11,6 +12,11 @@ int main() {
     cout << "Ingrese la edad: ";
     cin >> edad;
 
+    if (edad <= 0) {
+        cout << "Edad no válida. Ingrese un numero positivo." << endl;
+        return 1;
+	}
+	
     if (sexo == 'F' || sexo == 'f') {
         numPulsaciones = (220 - edad) / 10.0;
     } else if (sexo == 'M' || sexo == 'm') {
@@ -24,3 +30,4 @@ int main() {
 
     return 0;
 }
+
